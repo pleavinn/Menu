@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página de Login</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      padding: 40px;
+      width: 400px;
+    }
+
+    .login-box h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="password"] {
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .login-box input[type="submit"] {
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .login-box input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Faça login</h2>
+      <form>
+        <input type="text" placeholder="Nome de usuário" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="submit" value="Entrar">
+      </form>
+    </div>
+  </div>
+</body>
+</html>

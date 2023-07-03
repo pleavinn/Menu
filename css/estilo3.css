@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(0, 0, 0);
+}
+
+nav {
+    margin: 150px auto;
+    width: 450px;
+    height: 450px;
+}
+
+#check {
+    display: none;
+}
+
+#central {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: 150px;
+    z-index: 1;
+}
+
+#central img {
+    width: 100%;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+
+.link {
+    position: absolute;
+    margin: 195px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link01 {
+    transform: translateY(-195px);
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link02 {
+    transform: translateX(195px);
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link03 {
+    transform: translateY(195px);
+    transition: all .5s linear;
+}
+
+#check:checked ~ a #link04 {
+    transform: translateX(-195px);
+    transition: all .5s linear;
+}
+
+#check:checked ~ #central img {
+    transform: rotate(360deg);
+}
+
